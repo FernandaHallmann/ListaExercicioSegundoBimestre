@@ -2,7 +2,7 @@ package com.mycompany.exerciciocontabancaria;
 
 /**
  *
- * @author aluno
+ * @author Ferna
  */
 public class ContaBancaria {
     private String cliente;
@@ -26,5 +26,8 @@ public class ContaBancaria {
     public void depositar(float valor) {
         this.saldo += valor;
     }
-        
+    
+    public String mostraDados() {
+        return "\nCliente: " + cliente + "\nNúmero da conta: " + numConta + "\nSaldo: " + saldo;
+    }
 }

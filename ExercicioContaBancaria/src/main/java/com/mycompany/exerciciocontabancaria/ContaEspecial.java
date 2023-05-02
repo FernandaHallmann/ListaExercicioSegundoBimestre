@@ -2,7 +2,7 @@ package com.mycompany.exerciciocontabancaria;
 
 /**
  *
- * @author aluno
+ * @author Ferna
  */
 public class ContaEspecial extends ContaBancaria{
     private float limite;
@@ -20,7 +20,11 @@ public class ContaEspecial extends ContaBancaria{
             saldo -= valor;
         }
     }
-    
+
+    @Override
+    public String mostraDados() {
+        return super.mostraDados() + "\nLimite: " + limite;
+    }
     
     
 }
