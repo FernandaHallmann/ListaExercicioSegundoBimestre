@@ -2,7 +2,7 @@ package com.mycompany.exercicioanimais;
 
 /**
  *
- * @author aluno
+ * @author Ferna
  */
 public class Peixe extends Animal{
     private String caracteristicas;
@@ -18,9 +18,9 @@ public class Peixe extends Animal{
     public String getCaracteristicas() {
         return caracteristicas;
     }
-    
+
     @Override
-    public void dados() {
-        System.out.println("Animal: " + nome + "\nComprimento: " + "cm\nPatas: " + numPatas + "\nCor: " + cor + "\nAmbiente: " + ambiente + "\nVelocidade: " + velocidade + "m/s\nCaracteristicas: " + caracteristicas);
+    public String dados() {
+        return super.dados() + "\nCaracteristicas: " + caracteristicas;
     }
 }

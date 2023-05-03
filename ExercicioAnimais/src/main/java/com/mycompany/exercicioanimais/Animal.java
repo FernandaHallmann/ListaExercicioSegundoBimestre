@@ -2,15 +2,15 @@ package com.mycompany.exercicioanimais;
 
 /**
  *
- * @author aluno
+ * @author Ferna
  */
 public class Animal {
-    private String nome;
-    private int comprimento;
-    private int numPatas;
+    protected String nome;
+    protected int comprimento;
+    protected int numPatas;
     protected String cor;
-    private String ambiente;
-    private double velocidade;
+    protected String ambiente;
+    protected double velocidade;
 
     public Animal(String nome, int comprimento, int numPatas, String cor, String ambiente, double velocidade) {
         this.nome = nome;
@@ -45,7 +45,7 @@ public class Animal {
         this.velocidade = velocidade;
     }
     
-    public void dados() {
-        System.out.println("Animal: " + nome + "\nComprimento: " + comprimento + "cm\nPatas: " + numPatas + "\nCor: " + cor + "\nAmbiente: " + ambiente + "\nVelocidade: " + velocidade + "m/s");
+    public String dados() {
+        return "Animal: " + nome + "\nComprimento: " + comprimento + "cm\nPatas: " + numPatas + "\nCor: " + cor + "\nAmbiente: " + ambiente + "\nVelocidade: " + velocidade + "m/s";
     }
 }
